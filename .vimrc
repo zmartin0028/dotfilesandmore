@@ -15,6 +15,7 @@ Plugin 'whatyouhide/vim-gotham' " color scheme
 Plugin 'bling/vim-airline' "
 Plugin 'scrooloose/NERDTree' " NERDTree file tree
 Plugin 'scrooloose/syntastic' " syntax checker
+"Plugin 'chriskempson/base16-vim'
 
 " All of your plugins must be added before the following line
 call vundle#end()		" required
@@ -43,6 +44,11 @@ set textwidth=120		" when insertin, wrap after 120 chars
 set numberwidth=5		" fix linenum width
 set ignorecase			" case insensitive search
 set autoindent			" auto indent
+
+syntax on
+"colorscheme desert
+"colorscheme bluish
+colorscheme gotham256
 
 autocmd vimenter * NERDTree " auto toggle NERDTree
 autocmd vimenter * wincmd p " toggle focus to file instead of NERDTree
