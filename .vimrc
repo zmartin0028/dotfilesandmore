@@ -11,7 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'	" fuzzy finder
 "Plugin 'sjl/badwolf'		" color scheme
 Plugin 'tomtom/tcomment_vim'	" press gc to comment and uncomment lines
-Plugin 'whatyouhide/vim-gotham' " color scheme
+"Plugin 'whatyouhide/vim-gotham' " color scheme
 Plugin 'bling/vim-airline' "
 Plugin 'scrooloose/NERDTree' " NERDTree file tree
 Plugin 'scrooloose/syntastic' " syntax checker
@@ -46,9 +46,9 @@ set ignorecase			" case insensitive search
 set autoindent			" auto indent
 
 syntax on
-"colorscheme desert
+colorscheme desert
 "colorscheme bluish
-colorscheme gotham256
+"colorscheme gotham256
 
 autocmd vimenter * NERDTree " auto toggle NERDTree
 autocmd vimenter * wincmd p " toggle focus to file instead of NERDTree
