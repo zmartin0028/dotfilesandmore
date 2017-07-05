@@ -16,6 +16,7 @@ Plugin 'bling/vim-airline' "
 Plugin 'scrooloose/NERDTree' " NERDTree file tree
 Plugin 'scrooloose/syntastic' " syntax checker
 "Plugin 'chriskempson/base16-vim'
+Plugin 'flazz/vim-colorschemes'
 
 " All of your plugins must be added before the following line
 call vundle#end()		" required
@@ -30,7 +31,11 @@ filetype plugin indent on	" required
 " see :h vundle for more details or wiki for FAQ
 " put your non-Plugin stuff after this line
 
+let mapleader = ","
 
+nnoremap <leader>rn :set invrnu<cr>
+
+imap jj <esc>
 
 set number			" line numbers
 set showcmd			" show command in bottom bar
@@ -44,11 +49,21 @@ set textwidth=120		" when insertin, wrap after 120 chars
 set numberwidth=5		" fix linenum width
 set ignorecase			" case insensitive search
 set autoindent			" auto indent
+set sidescrolloff=15 " start scrolling when 15 chars away from edge
+set scrolloff=8     " start scrolling when 8 lines away from margins
+set virtualedit=all " allow cursor to go where no cursor has gone before
+set expandtab				" tabs are spaces
+set softtabstop=2   " number of spaces per tab
+set tabstop=2       " number of spaces per tab
+
 
 syntax on
-colorscheme desert
+colorscheme 256-jungle
 "colorscheme bluish
 "colorscheme gotham256
+
+" dime line numbers
+highlight LineNr guifg=darkgrey ctermfg=darkgrey
 
 autocmd vimenter * NERDTree " auto toggle NERDTree
 autocmd vimenter * wincmd p " toggle focus to file instead of NERDTree
