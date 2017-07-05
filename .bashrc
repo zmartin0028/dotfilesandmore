@@ -108,3 +108,28 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# aliases
+# ssh connection to datarealm server
+alias sshdr='ssh zmartin@208.97.189.123'
+
+# ssh connection to raspberry pi -> lobby monitor
+alias sshpi='ssh pi@10.200.60.66'
+
+# open .vimrc in vim
+alias vimrc='vim .vimrc'
+
+# open .bashrc in vim
+alias bashrc='vim .bashrc'
+
+# [ -z "$PS1" ] checks if the PS1 variable for the prompt is zero length
+# if it is zero length, the PS1 var has not been set, meaning that bash is not in interactive mode (i.e., it is running
+# a script)
+# the && return means that if bash is running a script, anything below this line in .bashrc will not apply
+# in other words, anything following this command will only execute in interactive mode
+[ -z "$PS1" ] && return
+
+# function to cause 'cd' command to 'ls -lart' as well
+function cd {
+				builtin cd "$@" && ls -lart
+}
