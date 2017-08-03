@@ -139,3 +139,6 @@ alias pingdr='ping -c 8 datarealm.mytrenton.net'
 function cd {
 				builtin cd "$@" && ls -lart
 }
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
