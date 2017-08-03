@@ -111,16 +111,22 @@ fi
 
 # aliases
 # ssh connection to datarealm server
-alias sshdr='ssh zmartin@208.97.189.123'
+alias sshdr='ssh zmartin@208.97.188.31'
 
 # ssh connection to raspberry pi -> lobby monitor
 alias sshpi='ssh pi@10.200.60.66'
 
 # open .vimrc in vim
-alias vimrc='vim .vimrc'
+alias vimrc='vim ~/.vimrc'
 
 # open .bashrc in vim
-alias bashrc='vim .bashrc'
+alias bashrc='vim ~/.bashrc'
+
+# connect to datarealm mysql db
+alias datarealmdb='mysql -u zmartin -p -h datarealm-2.mytrenton.net'
+
+#ping datarealm
+alias pingdr='ping -c 8 datarealm.mytrenton.net'
 
 # [ -z "$PS1" ] checks if the PS1 variable for the prompt is zero length
 # if it is zero length, the PS1 var has not been set, meaning that bash is not in interactive mode (i.e., it is running

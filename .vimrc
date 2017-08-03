@@ -36,6 +36,7 @@ let mapleader = ","
 nnoremap <leader>rn :set invrnu<cr>
 
 imap jj <esc>
+nnoremap ; :
 
 set number			" line numbers
 set showcmd			" show command in bottom bar
