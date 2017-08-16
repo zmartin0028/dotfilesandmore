@@ -142,3 +142,5 @@ function cd {
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
+export PATH="$PATH:/opt/mssql-tools/bin"
+export PATH="$PATH:/opt/mssql-tools/bin"

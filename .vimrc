@@ -15,7 +15,7 @@ Plugin 'tomtom/tcomment_vim'	" press gc to comment and uncomment lines
 Plugin 'bling/vim-airline' "
 Plugin 'scrooloose/NERDTree' " NERDTree file tree
 Plugin 'scrooloose/syntastic' " syntax checker
-"Plugin 'chriskempson/base16-vim'
+Plugin 'chriskempson/base16-vim'
 Plugin 'flazz/vim-colorschemes'
 
 " All of your plugins must be added before the following line
@@ -59,7 +59,9 @@ set tabstop=2       " number of spaces per tab
 
 
 syntax on
-colorscheme 256-jungle
+colorscheme codedark
+"colorscheme 256-jungle
+"colorscheme aldmeris
 "colorscheme bluish
 "colorscheme gotham256
 
