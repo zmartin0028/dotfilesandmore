@@ -59,7 +59,9 @@ set tabstop=2       " number of spaces per tab
 
 
 syntax on
-colorscheme codedark
+colorscheme alduin
+"colorscheme 256-grayvim
+"colorscheme codedark
 "colorscheme 256-jungle
 "colorscheme aldmeris
 "colorscheme bluish
