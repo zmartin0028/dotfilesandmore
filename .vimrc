@@ -59,13 +59,9 @@ set tabstop=2       " number of spaces per tab
 
 
 syntax on
-colorscheme alduin
-"colorscheme 256-grayvim
+colorscheme 256-grayvim
 "colorscheme codedark
-"colorscheme 256-jungle
 "colorscheme aldmeris
-"colorscheme bluish
-"colorscheme gotham256
 
 " dime line numbers
 highlight LineNr guifg=darkgrey ctermfg=darkgrey
