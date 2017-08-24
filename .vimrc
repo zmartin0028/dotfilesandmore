@@ -14,6 +14,7 @@ Plugin 'bling/vim-airline' "
 Plugin 'scrooloose/NERDTree' " NERDTree file tree
 Plugin 'scrooloose/syntastic' " syntax checker
 Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'airblade/vim-gitgutter'
 
 " All of your plugins must be added before the following line
 call vundle#end()		" required
@@ -37,12 +38,6 @@ nnoremap ; :
 vnoremap ; :
 nnoremap <leader>k :NERDTreeToggle<Cr> 
 
-" Colorstepper
-" Cycle colorschemes easily
-" F7 = next, F6 = prev
-" source ~/.vim/bundle/colorstepper/colorstepper.vim
-
-set t_Co=256    " 256 colors
 set number			" line numbers
 set showcmd			" show command in bottom bar
 set cursorline			" highlight current line
@@ -83,7 +78,7 @@ syntax on
 " colorscheme arcadia
 
 " Ivory Background
- let g:arcadia_Daybreak = 1
+" let g:arcadia_Daybreak = 1
 " colorscheme arcadia
 
 " colorscheme oceandeep
@@ -96,4 +91,3 @@ autocmd vimenter * NERDTree " auto toggle NERDTree
 autocmd vimenter * wincmd p " toggle focus to file instead of NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif " exit vim if NERDTree is the last open window
 
-" g:buffergator_viewport_split_policy="n/N"

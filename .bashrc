@@ -143,6 +143,7 @@ function cd {
 				builtin cd "$@" && ls -lart
 }
 
+<<<<<<< HEAD
 case $TERM in xterm) TERM=xterm-256color;; esac
 
 # Path to the bash it configuration
@@ -195,3 +196,9 @@ export SCM_CHECK=true
 
 # Load Bash It
 source "$BASH_IT"/bash_it.sh
+=======
+export VISUAL=vim
+export EDITOR="$VISUAL"
+export PATH="$PATH:/opt/mssql-tools/bin"
+export PATH="$PATH:/opt/mssql-tools/bin"
+>>>>>>> 4655a2db347806e87b9200c2cfe5accd343dfe4c
