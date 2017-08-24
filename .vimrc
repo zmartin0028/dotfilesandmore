@@ -17,6 +17,7 @@ Plugin 'scrooloose/NERDTree' " NERDTree file tree
 Plugin 'scrooloose/syntastic' " syntax checker
 Plugin 'chriskempson/base16-vim'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'airblade/vim-gitgutter'
 
 " All of your plugins must be added before the following line
 call vundle#end()		" required
@@ -59,9 +60,10 @@ set tabstop=2       " number of spaces per tab
 
 
 syntax on
-colorscheme 256-grayvim
 "colorscheme codedark
-"colorscheme aldmeris
+"colorscheme 256-jungle
+colorscheme alduin
+"colorscheme elda
 
 " dime line numbers
 highlight LineNr guifg=darkgrey ctermfg=darkgrey
