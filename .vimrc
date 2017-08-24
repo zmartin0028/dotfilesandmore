@@ -15,6 +15,7 @@ Plugin 'scrooloose/NERDTree' " NERDTree file tree
 Plugin 'scrooloose/syntastic' " syntax checker
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
 
 " All of your plugins must be added before the following line
 call vundle#end()		" required
