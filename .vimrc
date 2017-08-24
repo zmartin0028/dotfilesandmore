@@ -9,14 +9,11 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'ctrlpvim/ctrlp.vim'	" fuzzy finder
-"Plugin 'sjl/badwolf'		" color scheme
 Plugin 'tomtom/tcomment_vim'	" press gc to comment and uncomment lines
-"Plugin 'whatyouhide/vim-gotham' " color scheme
 Plugin 'bling/vim-airline' "
 Plugin 'scrooloose/NERDTree' " NERDTree file tree
 Plugin 'scrooloose/syntastic' " syntax checker
-"Plugin 'chriskempson/base16-vim'
-Plugin 'flazz/vim-colorschemes'
+Plugin 'jeetsukumaran/vim-buffergator'
 
 " All of your plugins must be added before the following line
 call vundle#end()		" required
@@ -37,7 +34,15 @@ nnoremap <leader>rn :set invrnu<cr>
 
 imap jj <esc>
 nnoremap ; :
+vnoremap ; :
+nnoremap <leader>k :NERDTreeToggle<Cr> 
 
+" Colorstepper
+" Cycle colorschemes easily
+" F7 = next, F6 = prev
+" source ~/.vim/bundle/colorstepper/colorstepper.vim
+
+set t_Co=256    " 256 colors
 set number			" line numbers
 set showcmd			" show command in bottom bar
 set cursorline			" highlight current line
@@ -59,9 +64,30 @@ set tabstop=2       " number of spaces per tab
 
 
 syntax on
-colorscheme 256-jungle
-"colorscheme bluish
-"colorscheme gotham256
+
+" different shades for arcadia colorscheme
+" Darker Grey
+" let g:arcadia_Sunset = 1
+" colorscheme arcadia
+
+" Darkest Grey
+" let g:arcadia_Twilight = 1
+" colorscheme arcadia
+
+" Almost Black
+" let g:arcadia_Midnight = 1
+" colorscheme arcadia
+
+" Black
+" let g:arcadia_Pitch = 1
+" colorscheme arcadia
+
+" Ivory Background
+ let g:arcadia_Daybreak = 1
+" colorscheme arcadia
+
+" colorscheme oceandeep
+colorscheme alduin
 
 " dime line numbers
 highlight LineNr guifg=darkgrey ctermfg=darkgrey
@@ -69,3 +95,5 @@ highlight LineNr guifg=darkgrey ctermfg=darkgrey
 autocmd vimenter * NERDTree " auto toggle NERDTree
 autocmd vimenter * wincmd p " toggle focus to file instead of NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif " exit vim if NERDTree is the last open window
+
+" g:buffergator_viewport_split_policy="n/N"
