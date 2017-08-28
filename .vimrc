@@ -16,6 +16,7 @@ Plugin 'scrooloose/syntastic' " syntax checker
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
+Plugin 'kshenoy/vim-signature'
 
 " All of your plugins must be added before the following line
 call vundle#end()		" required
@@ -60,6 +61,12 @@ set tabstop=2       " number of spaces per tab
 
 
 syntax on
+
+" unicode chars for displaying white space (show with <leader>l)                                                  
+set listchars=tab:»·,trail:·,nbsp:·,eol:↩ 
+
+" invert listchars (whitespace display)                                                                           
+nnoremap <leader>l :set invlist<cr>
 
 " different shades for arcadia colorscheme
 " Darker Grey
