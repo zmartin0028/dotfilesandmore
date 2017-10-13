@@ -36,6 +36,7 @@ let mapleader = ","
 nnoremap <leader>rn :set invrnu<cr>
 
 imap jj <esc>
+imap ff $
 nnoremap ; :
 vnoremap ; :
 nnoremap <leader>k :NERDTreeToggle<Cr> 
@@ -58,7 +59,8 @@ set virtualedit=all " allow cursor to go where no cursor has gone before
 set expandtab				" tabs are spaces
 set softtabstop=2   " number of spaces per tab
 set tabstop=2       " number of spaces per tab
-
+set nobackup
+set noswapfile
 
 syntax on
 
