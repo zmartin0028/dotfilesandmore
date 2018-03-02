@@ -129,6 +129,10 @@ alias datarealmdb='mysql -u zmartin -p -h datarealm-2.mytrenton.net'
 #ping datarealm
 alias pingdr='ping -c 8 datarealm.mytrenton.net'
 
+alias sshdreammachine='ssh ubuntu@208.113.165.69'
+
+alias ll='ls -la'
+
 export VISUAL=vim
 export EDITOR="$VISUAL" 
 
